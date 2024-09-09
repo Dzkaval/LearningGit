@@ -18,7 +18,10 @@ def pick_event():
     for i, event in enumerate(event_list):
         print(f"{i}: {event}")
 
-    i = int(input('Insert the event number:\n'))  # Get the choice from the user
+    if randint(3,99)>38:
+        i = int(input('Insert the event number:\n')) # Get the choice from the user
+    else:
+        i = randint(0,3)
 
     choice = event_list[i]  # Choose the event name corresponding to the user's number
     print(random_events[choice])  # Print the details of the chosen event
