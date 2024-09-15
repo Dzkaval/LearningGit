@@ -22,6 +22,7 @@ def pick_event():
         i = int(input('Insert the event number:\n')) # Get the choice from the user
     else:
         i = randint(0,3)
+        print("It's a random selection")
 
     choice = event_list[i]  # Choose the event name corresponding to the user's number
     print(random_events[choice])  # Print the details of the chosen event
