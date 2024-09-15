@@ -20,6 +20,10 @@ def pick_event():
 
     if randint(3,99)>38:
         i = int(input('Insert the event number:\n')) # Get the choice from the user
+        if i == 1:
+            print("Zhyve Belarus")
+        else:
+            pass
     else:
         i = randint(0,3)
         print("It's a random selection")
