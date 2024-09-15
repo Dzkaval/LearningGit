@@ -18,7 +18,7 @@ def pick_event():
     for i, event in enumerate(event_list):
         print(f"{i}: {event}")
 
-    if randint(3,99)>38:
+    if randint(3,99)>40:
         i = int(input('Insert the event number:\n')) # Get the choice from the user
     else:
         i = randint(0,3)
