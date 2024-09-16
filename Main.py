@@ -1,5 +1,6 @@
 import random
 from random import randint
+from countryinfo import CountryInfo
 
 random_library = {
     'random_events':
@@ -14,6 +15,7 @@ random_events = random_library['random_events']
 print(random_events['Belarus'])
 
 def pick_event():
+    Country = CountryInfo('Belarus')
     event_list = list(random_events.keys())
     for i, event in enumerate(event_list):
         print(f"{i}: {event}")
@@ -22,6 +24,7 @@ def pick_event():
         i = int(input('Insert the event number:\n')) # Get the choice from the user
         if i == 1:
             print("Zhyve Belarus")
+            print(Country.population())
         else:
             pass
     else:
