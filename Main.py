@@ -15,7 +15,7 @@ random_events = random_library['random_events']
 print(random_events['Belarus'])
 
 def pick_event():
-    Country = CountryInfo('Belarus')
+    Country = CountryInfo('Nauru')
     event_list = list(random_events.keys())
     for i, event in enumerate(event_list):
         print(f"{i}: {event}")
